@@ -170,6 +170,8 @@
       align-items:center;
       gap:10px;
     }
+
+    /* Icon circles & images */
     .icon-circle{
       width:34px;
       height:34px;
@@ -177,16 +179,24 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:16px;
-      color:#ffffff;
       background:#1e293b;
       flex-shrink:0;
+      overflow:hidden;
     }
+    .icon-circle img{
+      width:18px;
+      height:18px;
+      display:block;
+    }
+
+    /* Different colors per platform (background behind icon) */
     .icon-web{background:#0ea5e9;}
     .icon-mail{background:#3b82f6;}
     .icon-phone{background:#22c55e;}
     .icon-linkedin{background:#0a66c2;}
     .icon-facebook{background:#1877f2;}
+    .icon-instagram{background:#db2777;}
+
     .item-title{
       font-size:14px;
       font-weight:600;
@@ -218,11 +228,12 @@
         <div class="hero-overlay"></div>
         <div class="hero-inner">
           <div class="avatar">
-            <img src="faisal-headshot.png" alt="Dr. Faisal Alsaedi" />
+            <!-- IMPORTANT: make sure this filename matches the headshot file in your repo -->
+            <img src="faisal-headshot.jpg" alt="Dr. Faisal Alsaedi" />
           </div>
           <div class="hero-text">
             <h1>Dr. Faisal Alsaedi</h1>
-            <p class="role">CEO</p>
+            <p class="role">Founder</p>
             <p class="company">KDCare Community ABA Services</p>
             <p class="location">20225 Ann Arbor Trail, Dearborn Heights, MI 48127</p>
             <div class="chips">
@@ -244,7 +255,9 @@
           <!-- Website -->
           <a class="item" href="http://kccaba.com" target="_blank" rel="noopener">
             <div class="item-left">
-              <div class="icon-circle icon-web">🌐</div>
+              <div class="icon-circle icon-web">
+                <img src="icon-website.png" alt="">
+              </div>
               <div>
                 <div class="item-title">Website</div>
                 <div class="item-sub">kccaba.com</div>
@@ -256,7 +269,9 @@
           <!-- Email -->
           <a class="item" href="mailto:dr.faisal@kccaba.com">
             <div class="item-left">
-              <div class="icon-circle icon-mail">✉️</div>
+              <div class="icon-circle icon-mail">
+                <img src="icon-email.png" alt="">
+              </div>
               <div>
                 <div class="item-title">Email</div>
                 <div class="item-sub">dr.faisal@kccaba.com</div>
@@ -268,7 +283,9 @@
           <!-- Phone -->
           <a class="item" href="tel:+12489826722">
             <div class="item-left">
-              <div class="icon-circle icon-phone">📞</div>
+              <div class="icon-circle icon-phone">
+                <img src="icon-phone.png" alt="">
+              </div>
               <div>
                 <div class="item-title">Phone</div>
                 <div class="item-sub">+1 (248) 982-6722</div>
@@ -280,7 +297,9 @@
           <!-- LinkedIn -->
           <a class="item" href="https://www.linkedin.com/in/faisal-alsaedi-ph-d-b21a37b4?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">
             <div class="item-left">
-              <div class="icon-circle icon-linkedin">in</div>
+              <div class="icon-circle icon-linkedin">
+                <img src="icon-linkedin.png" alt="">
+              </div>
               <div>
                 <div class="item-title">LinkedIn</div>
                 <div class="item-sub">View professional profile</div>
@@ -292,7 +311,9 @@
           <!-- Facebook -->
           <a class="item" href="https://www.facebook.com/KCCABAServices/" target="_blank" rel="noopener">
             <div class="item-left">
-              <div class="icon-circle icon-facebook">f</div>
+              <div class="icon-circle icon-facebook">
+                <img src="icon-facebook.png" alt="">
+              </div>
               <div>
                 <div class="item-title">Facebook</div>
                 <div class="item-sub">@KCCABAServices</div>
@@ -301,13 +322,15 @@
             <div class="arrow">➜</div>
           </a>
 
-          <!-- Map / Location -->
-          <a class="item" href="https://maps.google.com/?q=20225%20Ann%20Arbor%20Trail%2C%20Dearborn%20Heights%2C%20MI%2048127" target="_blank" rel="noopener">
+          <!-- Instagram -->
+          <a class="item" href="https://www.instagram.com/kccabaservices/" target="_blank" rel="noopener">
             <div class="item-left">
-              <div class="icon-circle">📍</div>
+              <div class="icon-circle icon-instagram">
+                <img src="icon-instagram.png" alt="">
+              </div>
               <div>
-                <div class="item-title">Location</div>
-                <div class="item-sub">Get directions</div>
+                <div class="item-title">Instagram</div>
+                <div class="item-sub">@kccabaservices</div>
               </div>
             </div>
             <div class="arrow">➜</div>
@@ -322,3 +345,4 @@
   </div>
 </body>
 </html>
+
